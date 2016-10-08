@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="597e0db81483442488f48497d1c500a5" Name="Diagram1" ZoomLevel="94">
+        <EntityTypeShape EntityType="EleganciaModel.Bodega" Width="1.5" PointX="7.5" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.Boleta" Width="1.5" PointX="9.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.Cliente" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.Departamento" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.DepartamentoCliente" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.DetalleBoleta" Width="1.5" PointX="12" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.DetalleFactura" Width="1.5" PointX="12" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.Direccion" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.DireccionCliente" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.FacSerieNumero" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.Factura" Width="1.5" PointX="9.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.Inventario" Width="1.5" PointX="9.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.LogsInventario" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.Municipio" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.MunicipioCliente" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.Producto" Width="1.5" PointX="9.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.sysdiagram" Width="1.5" PointX="4.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.vBoletasDetalle" Width="1.5" PointX="6.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.vBoletasEntrada" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.vDetalleBoleta" Width="1.5" PointX="2.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.vDetalleFactura" Width="1.5" PointX="11.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.vEncabezadoFactura" Width="1.5" PointX="11.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.vEntradaSalida" Width="1.5" PointX="4.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.vExistenciaBodega" Width="1.5" PointX="6.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.vFacturaDetalle" Width="1.5" PointX="13.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EleganciaModel.vMunicipio" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="EleganciaModel.FK_Bodega_Direccion" ManuallyRouted="false" />
+        <AssociationConnector Association="EleganciaModel.FK_Boleta_Bodega" ManuallyRouted="false" />
+        <AssociationConnector Association="EleganciaModel.FK_Factura_Bodega" ManuallyRouted="false" />
+        <AssociationConnector Association="EleganciaModel.FK_Inventario_Bodega" ManuallyRouted="false" />
+        <AssociationConnector Association="EleganciaModel.FK_DetalleBoleta_Boleta" ManuallyRouted="false" />
+        <AssociationConnector Association="EleganciaModel.FK_Cliente_DireccionCliente" ManuallyRouted="false" />
+        <AssociationConnector Association="EleganciaModel.FK_Factura_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="EleganciaModel.FK_Municipio_Departamento" ManuallyRouted="false" />
+        <AssociationConnector Association="EleganciaModel.FK_MunicipioCliente_DepartamentoCliente" ManuallyRouted="false" />
+        <AssociationConnector Association="EleganciaModel.FK_DetalleBoleta_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="EleganciaModel.FK_DetalleFactura_Factura" ManuallyRouted="false" />
+        <AssociationConnector Association="EleganciaModel.FK_DetalleFactura_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="EleganciaModel.FK_Direccion_Municipio" ManuallyRouted="false" />
+        <AssociationConnector Association="EleganciaModel.FK_DireccionCliente_MunicipioCliente" ManuallyRouted="false" />
+        <AssociationConnector Association="EleganciaModel.FK_Inventario_Producto" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
